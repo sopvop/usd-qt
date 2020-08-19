@@ -21,7 +21,7 @@ option(INSTALL_PURE_PYTHON "Install pure python files. Disable to only install c
 
 include(Private)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(USD REQUIRED)
