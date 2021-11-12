@@ -30,7 +30,7 @@ if (NOT DEFINED CMAKE_CXX_STANDARD)
 endif()
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(USD REQUIRED)
+find_package(pxr CONFIG REQUIRED)
 find_package(TBB REQUIRED)
 
 find_package(PythonInterp 2.7 REQUIRED)
