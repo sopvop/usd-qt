@@ -70,7 +70,7 @@ function(_copy_headers LIBRARY_NAME)
                 add_custom_command(
                         OUTPUT ${outfile}
                         COMMAND
-                            "${PYTHON_EXECUTABLE}"
+                            "${Python_EXECUTABLE}"
                             "${PROJECT_SOURCE_DIR}/cmake/macros/copyHeaderForBuild.py"
                             "${infile}"
                             "${outfile}"
@@ -171,7 +171,7 @@ function(_install_python LIBRARY_NAME)
             list(APPEND files_copied ${outfile})
             add_custom_command(OUTPUT ${outfile}
                 COMMAND
-                    ${PYTHON_EXECUTABLE}
+                    ${Python_EXECUTABLE}
                     ${PROJECT_SOURCE_DIR}/cmake/macros/compilePython.py
                     ${CMAKE_CURRENT_SOURCE_DIR}/${file}
                     ${CMAKE_CURRENT_SOURCE_DIR}/${file}

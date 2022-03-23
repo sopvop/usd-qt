@@ -41,12 +41,8 @@ _pxr_python_module(usdQt
         pcp
         arch
         usd
-        ${Boost_PYTHON_LIBRARY}
-        ${PYTHON_LIBRARIES}
-
-    INCLUDE_DIRS
-        ${Boost_INCLUDE_DIRS}
-        ${PYTHON_INCLUDE_DIRS}
+        Boost::python
+        Python::Python
 
     CPPFILES
         attributeProxy.cpp

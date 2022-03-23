@@ -33,8 +33,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(pxr CONFIG REQUIRED)
 find_package(TBB REQUIRED)
 
-find_package(PythonInterp 2.7 REQUIRED)
-find_package(PythonLibs 2.7 REQUIRED)
+find_package(Python 2.7 REQUIRED COMPONENTS Interpreter Development)
 
 set(Boost_USE_STATIC_LIBS OFF)
 if(Boost_NO_BOOST_CMAKE)
@@ -50,7 +49,6 @@ include_directories(${Boost_INCLUDE_DIRS})
 include_directories(${USD_INCLUDE_DIR})
 link_directories(${USD_LIBRARY_DIR})
 
-include_directories(SYSTEM ${PYTHON_INCLUDE_DIRS})
 include_directories(SYSTEM ${TBB_INCLUDE_DIRS})
 
 add_subdirectory(pxr)
