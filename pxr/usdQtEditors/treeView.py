@@ -1,3 +1,4 @@
+from __future__ import unicode_literals, print_function
 #
 # Copyright 2017 Pixar
 #
@@ -101,7 +102,7 @@ class TreeView(QtWidgets.QTreeView):
                     # likely involves better detection on the model side.
                     try:
                         self.model().setData(index, value, QtCore.Qt.EditRole)
-                    except Exception, e:
+                    except Exception as e:
                         # TODO: We should do something better than printing to
                         # stderr
                         print("Exception during multi-edit:", e,

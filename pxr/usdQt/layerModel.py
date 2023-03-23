@@ -1,3 +1,4 @@
+from __future__ import absolute_import, unicode_literals, print_function
 #
 # Copyright 2017 Luma Pictures
 #
@@ -21,8 +22,6 @@
 # KIND, either express or implied. See the Apache License for the specific
 # language governing permissions and limitations under the Apache License.
 #
-
-from __future__ import absolute_import
 
 from ._Qt import QtCore
 from pxr import Sdf, Usd
@@ -151,7 +150,7 @@ if __name__ == '__main__':
     view.setModel(model)
 
     def OnDoubleClicked(modelIndex):
-        print modelIndex.data()
+        print(modelIndex.data())
 
     view.doubleClicked.connect(OnDoubleClicked)
     view.show()
