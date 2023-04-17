@@ -43,6 +43,7 @@ _pxr_python_module(usdQt
         usd
         Boost::python
         Python::Python
+        TBB::tbb
 
     CPPFILES
         attributeProxy.cpp
